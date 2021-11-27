@@ -1,0 +1,16 @@
+.modal-background {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: rgba(black, 1);
+  transition: opacity 0.3s;
+  display: grid;
+  place-items: center;
+  overflow: scroll;
+  z-index: 2;
+
+  &.hidden {
+    display: none;
+    opacity: 0;
+  }
+}

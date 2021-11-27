@@ -1,0 +1,18 @@
+.header {
+  //background-image: url("../images/desktop-image-hero-1.jpg");
+  //background-size: cover;
+  //padding: 5rem 8rem;
+  position: relative;
+}
+
+.backgrounds {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}

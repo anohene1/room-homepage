@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media (max-width: 740px) {
+    font-size: 56.25%;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 50%;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 40%;
+  }
+
+}
+
+body.modal-open {
+  overflow: hidden;
+}

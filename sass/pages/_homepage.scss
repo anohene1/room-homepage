@@ -1,0 +1,55 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 65vh 35vh;
+}
+
+.header {
+  grid-column: 1/7;
+}
+
+.buttons {
+  height: 8rem;
+  grid-column: 7/8;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-self: end;
+}
+
+.cta {
+  grid-column: 7/11;
+  grid-row: 1/2;
+  margin: 12%;
+
+  p {
+    margin: 3rem 0;
+  }
+}
+
+.image-box {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &.first {
+    grid-column: 1/4;
+  }
+
+  &.second {
+    grid-column: 8/11;
+  }
+}
+
+.about {
+  grid-column: 4/8;
+  padding: 0 10%;
+  display: grid;
+  place-items: center;
+
+  p {
+    margin: 1.8rem 0;
+  }
+}
+
