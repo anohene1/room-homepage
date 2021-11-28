@@ -19,19 +19,23 @@
   </style>
 </head>
 <body>
+<div class="modal-background hidden"></div>
 <header class="header">
   <div class="slider backgrounds">
     <div class="background bg--1">
-      <img src="images/desktop-image-hero-1.jpg" alt="">
+      <img srcset="images/desktop-image-hero-1.jpg 840w, images/mobile-image-hero-1.jpg 375w" sizes="(max-width: 600px) 480px, 720px" src="images/desktop-image-hero-1.jpg" alt="">
     </div>
 
     <div class="background bg--2">
-      <img src="images/desktop-image-hero-2.jpg" alt="">
+      <img srcset="images/desktop-image-hero-2.jpg 840w, images/mobile-image-hero-2.jpg 375w" sizes="(max-width: 600px) 480px, 720px" src="images/desktop-image-hero-2.jpg" alt="">
     </div>
 
     <div class="background bg--3">
-      <img src="images/desktop-image-hero-3.jpg" alt="">
+      <img srcset="images/desktop-image-hero-3.jpg 840w, images/mobile-image-hero-3.jpg 375w" sizes="(max-width: 600px) 480px, 720px" src="images/desktop-image-hero-3.jpg" alt="">
     </div>
+  </div>
+  <div class="hamburger">
+    <img src="images/icon-hamburger.svg" alt="" class="hamburger__icon">
   </div>
   <nav class="nav">
     <div class="nav__logo">

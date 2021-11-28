@@ -4,7 +4,17 @@
   top: 7rem;
   left: 7rem;
   z-index: 5;
+
+  @media (max-width: 830px) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    z-index: 40;
+  }
+
 }
+
 
 .navlist {
   list-style-type: none;
@@ -36,36 +46,48 @@
     }
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 830px) {
     display: none;
   }
 }
 
 .navlist.mobile {
-  display: flex;
-  text-transform: uppercase;
-  flex-direction: column;
-  font-family: 'Josefin Sans', sans-serif;
+  display: grid;
   position: absolute;
-  top: 25rem;
-  left: 1%;
+  background-color: white;
+  height: 16rem;
+  width: 100%;
+  margin-left: 0;
+  top: 0;
+  justify-content: end;
+  padding-top: 7rem;
+
+
+  & > .nav {
+    top: 0;
+  }
 
   a {
-    font-size: 4rem;
-
-    &:hover {
-      &:after {
-        width: 0;
-      }
-    }
+    font-size: 2rem;
+    color: $black;
   }
 }
 
 .hamburger {
   display: none;
 
-  @media (max-width: 720px) {
+  @media (max-width: 830px) {
     display: block;
     cursor: pointer;
+    position: absolute;
+    left: 8%;
+    top: 7rem;
+    z-index: 45;
+  }
+}
+
+@media (max-width: 830px) {
+  .nav__logo {
+    margin-top: 7rem;
   }
 }

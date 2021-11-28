@@ -2,12 +2,12 @@
   height: 100vh;
   width: 100vw;
   position: absolute;
-  background-color: rgba(black, 1);
+  background-color: rgba(black, 0.5);
   transition: opacity 0.3s;
   display: grid;
   place-items: center;
   overflow: scroll;
-  z-index: 2;
+  z-index: 20;
 
   &.hidden {
     display: none;
